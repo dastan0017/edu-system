@@ -52,7 +52,6 @@ const VideoLessons = () => {
         <Button onClick={openModal}>Добавить</Button>
       </Row>
       <Row className="page_content">
-        {loading && <Loader />}
         <Row className="cards">
           {tutorials.map(tutorial => (
             <Row key={tutorial.attributes.name} className="card">
