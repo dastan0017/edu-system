@@ -8,7 +8,7 @@ module.exports = {
     'eslint:recommended',
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
-    'plugin:prettier/recommended',
+    // 'plugin:prettier/recommended',
     'plugin:jsx-a11y/strict',
   ],
   parser: 'babel-eslint',
@@ -43,14 +43,7 @@ module.exports = {
   },
   overrides: [
     {
-      files: [
-        '**/*.test.js',
-        '**/*.test.jsx',
-        '**/*.test.tsx',
-        '**/*.spec.js',
-        '**/*.spec.jsx',
-        '**/*.spec.tsx',
-      ],
+      files: ['**/*.test.js', '**/*.test.jsx', '**/*.test.tsx', '**/*.spec.js', '**/*.spec.jsx', '**/*.spec.tsx'],
       env: {
         jest: true,
       },
