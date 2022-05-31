@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { Row, Button } from 'react-bootstrap'
 import { useStore, usePromise } from 'hooks'
-import { Loader, AlertDismissible, SimpleModal } from 'components'
+import { AlertDismissible, SimpleModal, ReadMore } from 'components'
 import { TutorialForm } from '../../forms'
 import { useIntl } from 'react-intl'
 import { sendNotification } from 'components/Toast'
@@ -57,7 +57,9 @@ const VideoLessons = () => {
             <Row key={tutorial.attributes.name} className="card">
               <Row className="description">
                 <h3>{tutorial.attributes.name}</h3>
-                <p>{tutorial.attributes.description}</p>
+                <div style={{ overflow: 'scroll' }}>
+                  <ReadMore text={tutorial.attributes.description} />
+                </div>
               </Row>
               <Row className="video">
                 <iframe

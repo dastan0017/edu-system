@@ -1,7 +1,7 @@
 import { Row } from 'react-bootstrap'
 import '../Pages.scss'
 import { useStore, usePromise } from 'hooks'
-import { Loader } from 'components'
+import { ReadMore } from 'components'
 
 const VideoLessons = () => {
   const { getTutorials, tutorials } = useStore('tutorialsStore')
@@ -18,7 +18,9 @@ const VideoLessons = () => {
             <Row key={tutorial.attributes.name} className="card">
               <Row className="description">
                 <h3>{tutorial.attributes.name}</h3>
-                <p>{tutorial.attributes.description}</p>
+                <div style={{ overflow: 'scroll' }}>
+                  <ReadMore text={tutorial.attributes.description} />
+                </div>
               </Row>
               <Row className="video">
                 <iframe title={tutorial.attributes.name} src={tutorial.attributes.video_link}></iframe>
