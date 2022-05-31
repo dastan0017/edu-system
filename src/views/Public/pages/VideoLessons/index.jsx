@@ -13,7 +13,6 @@ const VideoLessons = () => {
         <h2>Видеоуроки</h2>
       </Row>
       <Row className="page_content">
-        {loading && <Loader />}
         <Row className="cards">
           {tutorials.map(tutorial => (
             <Row key={tutorial.attributes.name} className="card">
