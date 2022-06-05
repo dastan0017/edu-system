@@ -6,6 +6,7 @@ import ReportsStore from './ReportsStore'
 import CommonStore from './CommonStore'
 import ReferenceBooksStore from './ReferenceBooksStore'
 import TutorialsStore from './TutorialsStore'
+import QuizzesStore from './QuizzesStore'
 
 const rootStore = {
   appStore: AppStore.create(),
@@ -16,6 +17,7 @@ const rootStore = {
   commonStore: CommonStore.create(),
   referenceBooksStore: ReferenceBooksStore.create(),
   tutorialsStore: TutorialsStore.create(),
+  quizzesStore: QuizzesStore.create(),
 }
 
 export { rootStore as stores }

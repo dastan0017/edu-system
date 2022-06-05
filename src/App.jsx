@@ -11,6 +11,9 @@ import { Spinner } from 'react-bootstrap'
 const VideoLessons = lazy(() => import('./views/Public/pages/VideoLessons'))
 const AdminsVideoLessons = lazy(() => import('./views/Admin/pages/VideoLessons'))
 
+const Quizzes = lazy(() => import('./views/Public/pages/Quizzes'))
+const SingleQuiz = lazy(() => import('./views/Public/pages/Quizzes/SingleQuiz'))
+
 const App = observer(() => {
   const authStore = useStore('authStore')
 
@@ -26,6 +29,24 @@ const App = observer(() => {
             element={
               <Suspense fallback={<Spinner />}>
                 <VideoLessons />
+              </Suspense>
+            }
+          />
+          <Route
+            index
+            path="quizzes/*"
+            element={
+              <Suspense fallback={<Spinner />}>
+                <Quizzes />
+              </Suspense>
+            }
+          />
+          <Route
+            index
+            path="quizzes/:quizId"
+            element={
+              <Suspense fallback={<Spinner />}>
+                <SingleQuiz />
               </Suspense>
             }
           />

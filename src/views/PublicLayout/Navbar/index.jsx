@@ -18,6 +18,9 @@ const Navbar = () => {
           <NavLink to="video-lessons" className={navData => `navbar_item ${navData.isActive ? 'navbar_active' : ''}`}>
             Видеоуроки
           </NavLink>
+          <NavLink to="quizzes" className={navData => `navbar_item ${navData.isActive ? 'navbar_active' : ''}`}>
+            Тесты
+          </NavLink>
         </div>
       </div>
 
