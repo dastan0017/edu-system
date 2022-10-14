@@ -1,20 +1,56 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+![Logo](https://i.postimg.cc/HnpCvmrc/download.png)
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+# Edu System application
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+Website for those who want to start their course online.
+
+For backend and Database I used "STRAPI" (Headless CMS).
+
+
+
+## Tech Stack
+
+**Client:** React, Mobx, Mobx-State-Tree, React-Hook-Form, SASS, SCSS etc. 
+
+**Server:** STRAPI headless CMS
+
+
+## Demo
+
+https://youtu.be/Pebxvh6Yxtc
+
+## Website url
+https://kg-khanacademy.herokuapp.com/video-lessons
+
+
+## Features
+
+- Authorization and Authentication
+- Roles (Administrator and User)
+- Full CRUD with Lectures (Adding Video from YouTube and additional info about lecture)
+- Creating multiple choice Tests
+- etc. 
+
+
+## Screenshots
+
+**Videos**
+
+![App Screenshot](https://i.postimg.cc/NFycT4SL/2022-10-14-235840.png)
+
+
+**Tests**
+
+![App Screenshot](https://i.postimg.cc/FHvKtMwZ/2022-10-15-000325.png)
+
+**Test**
+
+![App Screenshot](https://i.postimg.cc/wBhcxYBj/image.png)
+
+**Test result**
+
+![App Screenshot](https://i.postimg.cc/ncC4jDL5/2022-10-15-000726.png)
+
+
